@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h1{
+       @apply text-gray-100 text-xl font-bold
+    }
+}
+
+@layer components{
+.input-fabiano{
+    @apply w-full max-w-md bg-slate-300 py-2 pl-5 rounded-2xl outline-none focus:border-4 focus:border-gray-900 focus:dark:border-gray-50 invalid:focus:border-2 invalid:focus:border-red-600 invalid:focus:dark:border-red-600
+    }
+
+.button-form{
+    @apply bg-gray-500 max-w-sm py-1 px-5 rounded-2xl text-gray-200 uppercase font-semibold hover:animate-pulse hover:shadow-sm hover:shadow-gray-500 hover:dark:shadow-black
+    }
+    
+.card-style{
+    @apply p-5 bg-gray-200 dark:bg-gray-500 sm:rounded-xl sm:shadow-lg flex flex-col items-center gap-2
+}
+}
